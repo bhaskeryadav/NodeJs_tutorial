@@ -6,6 +6,9 @@ const notes = require('./notes.js')
 var yargv = yargs.argv;
 var cmd = yargs.argv._[0];
 
+
+
+// TODO convert this into command desin pattern
 if(cmd === 'add'){
 notes.addNote(yargs.argv.title,yargs.argv.body);
 }else if(cmd === 'remove'){
